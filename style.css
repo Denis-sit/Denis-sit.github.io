@@ -120,7 +120,6 @@ header{
 
 .heder-logo{
     margin-top: 25px;
-    
 }
 
 .heder-item-icon{
@@ -132,6 +131,10 @@ header{
      margin-left: 90px;
 }
 
+
+/*конец стилей навигации*/
+
+/* начало стилей promo*/
 .promo-contener{
      height: 566px;
 }
@@ -186,6 +189,12 @@ header{
       text-decoration: none;
 }
 
+.button-colection a:hover{
+     background-color: white;
+     color: black;
+     box-shadow: -2px 2px black;
+}
+
 .promo-image{
       margin-top: 75px;
       margin-left: 100px;
@@ -235,11 +244,18 @@ h2{
 
 .image-item{
      display: flex;
-     
 }
 
 .image-item li{
      margin-right: 30px;
+}
+
+.item-cards img:hover{
+     box-shadow: -2px 2px black;
+}
+
+.item-cards p:hover{
+     color:#727A82;
 }
 
 .image-item li:last-child {
@@ -348,6 +364,12 @@ h2{
      text-decoration: none;
      
 }
+
+.read_more:hover{
+     background-color: white;
+     color: black;
+     box-shadow: -2px 2px black;
+}
 /* конец стилей News*/
 
 /*Начало стилей categori*/
@@ -356,7 +378,12 @@ h2{
      margin-top: 109px;
 }
 
+
 /*Конец стилей categori*/
+
+
+
+
 
 /*Начало стилей footer*/
 
@@ -423,3 +450,7 @@ footer p{
 
 
 /*Конец стилей footer*/
+
+a:hover{
+     color:  #727A82;
+}
