@@ -157,15 +157,24 @@ nav{
     margin-left: 15px;
 }
 
-.preview-img img{
+.preview-img a{
+    display:inline-block ;
+    width:85px;
+}
+
+.preview-img a{
     margin-right: 20px;
 }
 
-.preview-img img:first-child{
+.preview-img img{
+    display: inline-block;
+}
+
+.preview-img a:first-child{
     margin-left: 60px;
 }
 
-.preview-img img:last-child{
+.preview-img a:last-child{
     margin-right: 0;
 }
 

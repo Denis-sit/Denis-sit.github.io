@@ -23,3 +23,16 @@ back.addEventListener('click' , function(){
     }
     sliderLine.style.left = -offset + 'px';
  });
+
+
+ var imgButton = document.querySelectorAll('.preview');
+ console.log(imgButton);
+ for(let i=0; i<=imgButton.length-1;i++){
+ imgButton[i].addEventListener('click', function(evt){
+   evt.preventDefault();
+    offset = imgButton[i].dataset.pixel;
+    let offsetNum = Number(offset);
+    sliderLine.style.left=-offsetNum + 'px';
+  
+ });
+}
