@@ -196,6 +196,7 @@ nav{
     position: relative;
     top:274px;
     left: 0;
+    cursor: pointer;
 }
 
  .back{
@@ -213,6 +214,7 @@ nav{
     position: relative;
     left:520px;
     top:274px;
+    cursor: pointer;
 }   
 /*конец стилей кнопок  слайдера*/
 
@@ -383,6 +385,12 @@ input[type=radio]:checked + .btn-color3::after{
     padding: 27px 56px;
     background-color: black;
     color: white;
+}
+
+.purchase a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: -2px 2px black;
 }
 /*конец стилей slider-functional*/
 

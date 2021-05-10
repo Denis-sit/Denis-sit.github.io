@@ -1,10 +1,10 @@
 let offset = 0;
 const sliderLine = document.querySelector('.slider-line');
 let width = document.querySelector('.slider-line').offsetWidth;
-var next = document.querySelector('.next');
-var back = document.querySelector('.back');
+let next = document.querySelector('.next');
+let back = document.querySelector('.back');
 let widhtImg = document.querySelector('.image').offsetWidth;
-var returnWidth = width-widhtImg;
+let returnWidth = width-widhtImg;
 
 next.addEventListener('click' , function(){
    offset+=widhtImg;
@@ -25,7 +25,7 @@ back.addEventListener('click' , function(){
  });
 
 
- var imgButton = document.querySelectorAll('.preview');
+ let imgButton = document.querySelectorAll('.preview');
  console.log(imgButton);
  for(let i=0; i<=imgButton.length-1;i++){
  imgButton[i].addEventListener('click', function(evt){

@@ -211,6 +211,10 @@ nav{
     margin-top: 40px;
 }
 
+#filter:hover{
+    border-color: #727A82;
+}
+
 .card{
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +248,13 @@ nav{
     line-height: 19px;
 }
 
+.card-item img:hover{
+    box-shadow: -2px 2px black;
+}
+
+.card-item p:hover{
+    color:#727A82;
+}
 .page p{
     font-family: Work Sans;
     font-style: normal;
@@ -258,7 +269,6 @@ nav{
     width: 199px;
     height: 0;
     border: 1px solid #E5E5E5;
-   
 }
 
 #slider::-webkit-slider-thumb{
@@ -266,9 +276,10 @@ nav{
     width: 40px;
     height: 0;
     border: 1px solid black;
+    cursor: pointer;
 }
 
-.containerloadmore{
+.container-loadmore{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,6 +302,11 @@ nav{
     padding: 23px 58px;
     background-color:#151C22;
     color: white;
+}
+.load-more:hover{
+    background-color: white;
+    color: black;
+    box-shadow: -2px 2px black;
 }
 
 /*конец стилей main*/
@@ -361,3 +377,7 @@ footer p{
 
 
 /*Конец стилей footer*/
+
+a:hover{
+  color: #727A82;
+}
