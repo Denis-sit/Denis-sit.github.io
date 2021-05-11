@@ -197,7 +197,9 @@ nav{
 
 .button{
     display: inline-block;
+    position: relative;
     margin-left: 925px;
+    margin-top: 40px;
 }
 
 #filter{
@@ -208,12 +210,32 @@ nav{
     font: inherit;
     letter-spacing: inherit;
     word-spacing: inherit;
-    margin-top: 40px;
+    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
 }
 
 #filter:hover{
     border-color: #727A82;
 }
+
+.button::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width:10px;
+        height: 10px;
+        border-bottom: 2px solid black;
+        z-index: 1;
+        top:17px ;
+        right: 17px;
+        transform: rotate(45deg);
+        border-right: 2px solid black;
+        pointer-events: none;
+    }
+
+   
+   
 
 .card{
     display: flex;
@@ -277,6 +299,17 @@ nav{
     height: 0;
     border: 1px solid black;
     cursor: pointer;
+}
+
+@-moz-document url-prefix() {
+    #slider::-moz-range-thumb{
+        -webkit-appearance: none;
+        width: 40px;
+        height: 0;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
 }
 
 .container-loadmore{
